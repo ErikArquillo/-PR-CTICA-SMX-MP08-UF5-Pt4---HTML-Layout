@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con Layout Flexible</title>
+    <style>
+        /* Estilo general */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1d2b; /* Fondo oscuro */
+            color: #f5f5f5; /* Texto blanco */
+        }
+
+        h2 {
+            margin-left: 10px;
+        }
+
+        /* Ejercicio 1 */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            background-color: #f5f5f5;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .imagenes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        img {
+            width: 60px;
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #888;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Ejercicio 2 */
+        .ejercicio2 {
+            background-color: #87CEFA; /* Azul claro */
+            width: 100%;
+            min-height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            resize: both; /* Permite redimensionar */
+            overflow: auto; /* Scroll si es necesario */
+            box-sizing: border-box;
+        }
+
+        .centrado {
+            background-color: #FFFFE0; /* Amarillo claro */
+            color: #808080;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-align: center;
+            white-space: nowrap; /* Evita que el texto salte */
+        }
+
+        /* Ejercicio 3 */
+        .ejercicio3 {
+            background-color: #87CEFA;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+            resize: both; /* Permite redimensionar */
+            overflow: auto; /* Scroll si es necesario */
+            box-sizing: border-box;
+        }
+
+        .caja {
+            background-color: #FFFFE0;
+            color: #808080;
+            font-size: 16px;
+            max-width: 150px;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            white-space: nowrap; /* Evita saltos de línea */
+        }
+    </style>
+</head>
+<body>
+    <!-- Ejercicio 1 -->
+    <h2>Ejercicio 1:</h2>
+    <header>
+        <span>&#128187;</span>
+        <span>RoboWeb</span>
+        <span>&#128187;</span>
+    </header>
+    <div class="imagenes">
+        <img src="1.webp" alt="Imagen 1">
+        <img src="2.webp" alt="Imagen 2">
+        <img src="3.webp" alt="Imagen 3">
+        <img src="4.webp" alt="Imagen 4">
+    </div>
+    <footer>Welcome to RoboWeb</footer>
